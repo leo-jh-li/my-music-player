@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <title>Muzik</title>
+      <link href="style/main.css" rel="stylesheet" type="text/css"/>
+      <link href="style/notification.css" rel="stylesheet" type="text/css"/>
+      <link href="style/modal.css" rel="stylesheet" type="text/css"/>
+      <link href="style/range.css" rel="stylesheet" type="text/css"/>
+   </head>
+   <body>
+      <header class="header">
+         <img id="logo" src="media/title.png" alt="Muzik">
+      </header>
+      <div id="alert"></div>
+      <div class="filler_maintab">
+         <a href="index.html"><button id="navi_search" class="search_button icon">Search</button></a>
+         <a href="playlist.html"><button id="navi_playlist" class="my_playlist_button icon">My Playlist</button></a>
+         <a href="charts.html"><button id="navi_charts" class="charts_button icon">Charts</button></a>
+      </div>
+      <div id="now_playing" class="slide">
+         <p></p>
+      </div>
+      <div class="music_controls">
+            <div id="video_time">
+                <div id="current_time" class="time_display"></div>
+                <div id="duration" class="time_display"></div>
+            </div>
+            <input id="scrubber" type="range" min="0" max="100" step="1" value="0"></input>
+            <div class="container playlist_buttons">
+                <div class="previous_button music_button"></div>
+                <div id="main_play" class="play_button music_button"></div>
+                <div class="skip_button music_button"></div>
+            </div>
+            <input id="vol_control" type="range" min="0" max="100" step="1" value="100"></input>
+        </div>
+      <div class="container filler_subtab">
+         <button id="top_songs" class="dropbtn top_icon_button icon sub_clicked">Top Songs</button>
+         <button id="artists_top_songs" class="dropbtn search_button icon">Search by Artist</button>
+      </div>
+      <form id="search_form" class="container hide">
+         <input type="text" id="search_string" placeholder="Search...">
+         <input type="submit" id="search_submit" value="Search">
+      </form>
+      <div id="top_results"></div>
+      <div id="load_more" class="load_button">Load More</div>
+      <script src="js/model.js"></script>
+      <script src="js/notification.js"></script>
+      <script src="js/buttons.js"></script>
+      <script src="js/charts.js"></script>
+      <script src="js/navigation.js"></script>
+      <script src="https://apis.google.com/js/client.js"></script>
+      <script src="https://www.youtube.com/iframe_api"></script>
+   </body>
+</html>

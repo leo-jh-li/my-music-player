@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "My Music Player",
+  "description": "",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "frontend/media/icon.png",
+    "default_popup": "frontend/index.html"
+  },
+
+  "icons": {
+    "16": "frontend/media/icon.png",
+    "48": "frontend/media/icon.png",
+    "128": "frontend/media/icon.png"
+  },
+
+  "content_security_policy": "script-src 'self' https://apis.google.com https://www.youtube.com/iframe_api https://s.ytimg.com/; object-src 'self'",
+
+  "permissions": [
+     "storage",
+     "webRequest",
+     "webRequestBlocking",
+     "<all_urls>"
+   ],
+
+  "background": {
+    "page": "frontend/background.html"
+  }
+}

@@ -1,0 +1,37 @@
+
+#alert {
+    padding: 10px;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+}
+
+.closebtn {
+    margin-left: 15px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.success {
+    background-color: #4CAF50; 
+}
+
+.error {
+    background-color: #f44336;
+}
+
+.notification_text {
+    margin-left: 40px;
+}
